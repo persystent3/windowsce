@@ -7,7 +7,7 @@ The result of our conceptual studies of File Shredding and Cryptographic Erase h
 
 Despite issues with the key itself, whether it remains in memory or on disk, or even not on disk with the RSA concept, there still exists the issue of verifying the original unencrypted data still does not exist on the hard disk drive or solid state drive.  Thus, more research is necessary on this aspect for trying to implement file shredding or CE onto a regular Windows installation.
 
-DefCon 24 (DC24) is over and so is our work on this program, for now....  The Demonsaw 3.0 launch party was the best part of Def Con 24. Cheers to Eijah, his crew and everybody else we met at DC24.  Until DC25.
+DefCon 24 (DC24) is over and so is our work on this program, for now....
 
 Enjoy,
 
