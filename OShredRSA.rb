@@ -33,9 +33,8 @@ if s <= 1000000000
   exit
 end
 #Get SHA1 hash
-c = Digest::SHA1.file("#{ARGV[0]}").hexdigest
-puts ">> #{ARGV[0]} Pre Encryption Sha1 value: #{c}\n"
-c = nil
+a = Digest::SHA1.file("#{ARGV[0]}").hexdigest
+puts ">> #{ARGV[0]} Pre Encryption Sha1 value:  #{a}\n"
 #Encrypt file with RSA Public Key
 begin
 key1 = OpenSSL::PKey::RSA.new File.read 'public_key.pem'
@@ -47,6 +46,9 @@ encrypted = key1.public_encrypt('data')
 output = File.open("#{ARGV[0]}", "wb")
 output << encrypted
 output.close
+#Get SHA1 hash
+b = Digest::SHA1.file("#{ARGV[0]}").hexdigest
+puts ">> #{ARGV[0]} Pre Encryption Sha1 value: #{b}\n"
 rescue
   puts "Error #{e}\n"
 end
