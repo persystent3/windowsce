@@ -7,7 +7,7 @@ require 'digest/sha1'
 exit if Object.const_defined?(:Ocra)
 
 unless ARGV.length == 1
-  puts "Syntax: ruby OShredAES.rb filename.txt\n"
+  puts "Syntax: ruby OShredRSA.rb filename.txt\n"
   exit
 end
 
