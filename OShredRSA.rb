@@ -48,7 +48,7 @@ output << encrypted
 output.close
 #Get SHA1 hash
 b = Digest::SHA1.file("#{ARGV[0]}").hexdigest
-puts ">> #{ARGV[0]} Pre Encryption Sha1 value: #{b}\n"
+puts ">> #{ARGV[0]} Post Encryption Sha1 value: #{b}\n"
 rescue
   puts "Error #{e}\n"
 end
